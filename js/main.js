@@ -31,6 +31,5 @@ getResource('https://www.cbr-xml-daily.ru/daily_json.js')
            { 
               tg.MainButton.show() 
            }
-
         });
     });
