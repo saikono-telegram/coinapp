@@ -22,10 +22,10 @@ btn.addEventListener('click', function(){
               const usdCur = Math.floor(summ / body.Valute.USD.Value);
               const eurCur = Math.floor(summ / body.Valute.EUR.Value);
 
-              tg.MainButton.show() 
               tg.MainButton.setText(`${summ}₽ = ${usdCur}$ | ${eurCur}€!`); 
               tg.MainButton.textColor = "#FFF"; 
               tg.MainButton.color = "#ffd800"; 
+              tg.MainButton.show() 
          });
    }
 });
