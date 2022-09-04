@@ -18,7 +18,7 @@ getResource('https://www.cbr-xml-daily.ru/daily_json.js')
            const usdCur = Math.floor(summ / body.Valute.USD.Value);
            const eurCur = Math.floor(summ / body.Valute.EUR.Value);
 
-           tg.MainButton.setText(`${summ}₽`); 
+           tg.MainButton.setText(`${summ} RUB`); 
            tg.MainButton.textColor = "#0a0a0a"; 
            tg.MainButton.color = "#ffd800"; 
 
