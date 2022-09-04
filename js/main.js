@@ -13,5 +13,5 @@ btn.addEventListener('click', function(){
         valute.USD = res.data.Valute.USD.Value
         converter.innerText = `${valute.EUR}\n${valute.USD}`
         coincard.appendChild(converter);   
-    })
+    });
 });
