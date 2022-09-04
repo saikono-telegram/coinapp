@@ -44,19 +44,19 @@ select {
   font-weight: 600;
   text-transform: uppercase;
   padding: 15px 26px;
-  background-color: #292929;
-  border: 1px solid #292929;
+  background-color: #242424;
+  border: 1px solid #242424;
   text-align: center;
   width: 100%;
   height: auto;
   margin: 0;
   outline: 0;
   color: #ffd800;
-  background: #292929;
+  background: #242424;
   cursor: pointer;
   position: relative;
   z-index: 0;
-  box-shadow: 0 1px 0 #292929 inset;
+  box-shadow: 0 1px 0 #242424 inset;
   transition: all .2s ease;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
@@ -82,7 +82,7 @@ label.light {
   display: inline;
 }
 
-#usercard{
+#coincard{
   text-align: center;
   margin-bottom: 5px;
 }
