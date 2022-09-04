@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <input id="summ" type="coin" placeholder="Сумма в рублях">
+   <label><span data-val="0"><input id="summ" type="coin" placeholder="Сумма в рублях" oninput="this.parentElement.dataset.val = this.value"></span>RUB</label>
    <button id="convert" type="submit">Продолжить</button>
 </body>
 
