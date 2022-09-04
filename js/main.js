@@ -5,22 +5,27 @@ tg.expand();
 let btn = document.getElementById("btn"); 
 
 btn.addEventListener('click', function(){ 
-	const getResource = async(url) => {
-        const res = await fetch(url);
-        const body = await res.json();  
-        return body;
-    };
+   if (tg.MainButton.isVisible){ 
+      tg.MainButton.hide() 
+   }
+   else{ 
+      const getResource = async(url) => {
+          const res = await fetch(url);
+          const body = await res.json();  
+          return body;
+      };
 
-    getResource('https://www.cbr-xml-daily.ru/daily_json.js')
-        .then((body)=>{
-            const usdCur = body.Valute.USD.Value;
-            const eurCur = body.Valute.EUR.Value;
+      getResource('https://www.cbr-xml-daily.ru/daily_json.js')
+          .then((body)=>{
+              const summ = document.getElementById('summ').value;
 
-            let coincard = document.getElementById("coincard");
-            let converter = document.createElement('p');
-            
-            converter.innerText = `${usdCur}\n${eurCur}`
-            coincard.appendChild(converter);            
-    
-       });
+              const usdCur = Math.floor(summ / body.Valute.USD.Value);
+              const eurCur = Math.floor(summ / body.Valute.EUR.Value);
+
+              tg.MainButton.show() 
+              tg.MainButton.setText(`${summ}₽ = ${usdCur}$ | ${eurCur}€!`); 
+              tg.MainButton.textColor = "#FFF"; 
+              tg.MainButton.color = "#ffd800"; 
+         });
+   }
 });
