@@ -38,7 +38,7 @@ img {
   margin-bottom: 5px;
 }
 
-input[type="summ"],
+input[type="text"],
 select {
   font-size: 16px;
   font-weight: 600;
@@ -64,34 +64,4 @@ select {
 
 input::placeholder {
   color: #292929;
-}
-
-label {
-  display: block;
-  line-height: 24px;
-  margin-bottom: 4px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #f8f8f8;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-#coincard{
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #FFF;
-}
-
-.link{
-  color: var(--tg-theme-text-color);
-  margin-bottom: 15px;
 }

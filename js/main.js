@@ -10,7 +10,7 @@ const getResource = async(url) => {
 
 getResource('https://www.cbr-xml-daily.ru/daily_json.js')
     .then((body)=>{
-        const summ = document.getElementById("summ");
+        const summ = document.getElementById("summ").value;
 
         const usdCur = Math.floor(summ / body.Valute.USD.Value);
         const eurCur = Math.floor(summ / body.Valute.EUR.Value);
