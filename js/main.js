@@ -10,11 +10,11 @@ btn.addEventListener('click', function(){
         const body = await res.json();  
         return body;
     };
-    
+
     getResource('https://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
         .then((body)=>{
-            const usdCur = body[4].Cur_OfficialRate;
-            const eurCur = body[5].Cur_OfficialRate;
+            const usdCur = body[7].Cur_OfficialRate;
+            const eurCur = body[9].Cur_OfficialRate;
 
             let coincard = document.getElementById("coincard");
             let converter = document.createElement('p');
