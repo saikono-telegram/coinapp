@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand(); 
 
-let btn = document.getElementById("btn"); 
+let btn = document.getElementById("convert"); 
 
 const getResource = async(url) => {
     const res = await fetch(url);
